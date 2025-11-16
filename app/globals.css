@@ -1,0 +1,15 @@
+:root { color-scheme: dark; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #0a0a0a; color: #fff; }
+
+.page { min-height: 100vh; display: grid; grid-template-rows: auto 1fr; }
+.actions { display: flex; gap: 12px; padding: 14px 16px; justify-content: flex-end; background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0)); position: sticky; top: 0; z-index: 2; }
+
+.btn { appearance: none; border: 1px solid #222; color: #eaeaea; background: #121212; padding: 10px 14px; border-radius: 10px; font-weight: 600; cursor: pointer; transition: transform .06s ease, background .2s ease, border .2s ease; }
+.btn:hover { transform: translateY(-1px); border-color: #2b2b2b; background: #161616; }
+.btn:disabled { opacity: 0.5; cursor: default; transform: none; }
+.btn.primary { background: #1b1b1b; border-color: #2c2c2c; }
+.btn.primary:hover { background: #202020; }
+
+.canvasWrap { width: min(1200px, 96vw); height: calc(min(1200px, 96vw) * 9 / 16); margin: 10px auto 32px; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.7), inset 0 0 0 1px rgba(255,255,255,0.02); background: #0a0a0a; }
